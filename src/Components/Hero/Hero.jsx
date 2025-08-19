@@ -21,7 +21,7 @@ const Hero = () => {
       </motion.h2>
 
       <p className="hero-subText">
-        Bring your ideas to life with expert{" "}
+        {/* Bring your ideas to life with expert{" "} */}
         <span>Web & App Development</span>, <span>AI</span>,{" "}
         <span>Data Science</span>, and{" "}
         <span>Digital Marketing & SEO Services </span>with affordable Prices.
