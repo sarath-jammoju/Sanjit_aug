@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
-import "../softwareProcess/softwareProcess.css";
+import "../softwareProcess/SoftwareProcess.css";
 const cards = [
   {
     id: 1,
