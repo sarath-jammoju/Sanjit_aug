@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FiPlus, FiX } from "react-icons/fi";
-import "../whyChooseFaq/whyChooseFaq.css"; // Import CSS file
+import "../whyChooseFaq/WhyChooseFaq.css"; // Import CSS file
 import { motion } from "framer-motion";
 
 const faqs = [
