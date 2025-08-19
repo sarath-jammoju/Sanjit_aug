@@ -103,7 +103,7 @@ const Certificates = () => {
 
             {/* ✅ Download & Print Buttons */}
             <div className="action-buttons">
-              <button onClick={handleDownload}>Download PDF</button>
+              {/* <button onClick={handleDownload}>Download PDF</button> */}
               <button onClick={handlePrint}>Print</button>
             </div>
           </>

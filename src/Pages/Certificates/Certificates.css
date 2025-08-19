@@ -120,3 +120,14 @@ cursor: pointer;
   background-color: #083074;
 }
 
+.certificate-image {
+  width: 900px;   /* control width */
+  height: auto;   /* keeps aspect ratio */
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.action-buttons{
+    margin-bottom: 100px;
+}
