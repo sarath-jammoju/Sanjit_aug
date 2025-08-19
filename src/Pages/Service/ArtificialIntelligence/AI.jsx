@@ -13,7 +13,7 @@ import ai_hero from "../../../assets/ai-hero.webp";
 import webbg from "../../../assets/web-service-bg.webp";
 import webbg_lt from "../../../assets/web-service-bg-lt.webp";
 import CTA_img from "../../../assets/CTA_Image.webp";
-import "../ArtificialIntelligence/Ai.css";
+import "../ArtificialIntelligence/AI.css";
 import AiProcess from "./AiProcess/AiProcess";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
