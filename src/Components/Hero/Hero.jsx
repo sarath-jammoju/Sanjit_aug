@@ -22,7 +22,6 @@ const Hero = () => {
 
       <p className="hero-subText">
         Bring your ideas to life with expert{" "}
-        <h1>Sanjit</h1>
         <span>Web & App Development</span>, <span>AI</span>,{" "}
         <span>Data Science</span>, and{" "}
         <span>Digital Marketing & SEO Services </span>with affordable Prices.
