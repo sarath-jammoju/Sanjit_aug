@@ -8,6 +8,7 @@ import { FaSquareTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaSquareInstagram } from "react-icons/fa6";
 
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -50,6 +51,11 @@ const Footer = () => {
               <li>
               <HashLink smooth to="/#faqs" title="Go to FAQs section on Home">
                   FAQs
+              </HashLink>
+              </li>
+              <li>
+              <HashLink smooth to="/certificates" title="Go to Certificates section on Home">
+                  Certificates
               </HashLink>
               </li>
               {/* <li>

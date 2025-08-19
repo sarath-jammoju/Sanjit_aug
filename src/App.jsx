@@ -16,6 +16,9 @@ import ScrollToTop from "./Components/ScrollBar/ScrollToTop.jsx";
 import Termsconditions from "./Pages/Terms&Conditiions/Terms&conditions.jsx";
 import Privacyrefund from "./Pages/policy&refund/Privacyrefund.jsx";
 
+import Certificates from "./Pages/Certificates/Certificates.jsx";
+
+
 
 function App() {
   const location = useLocation();
@@ -24,7 +27,7 @@ function App() {
   const validRoutes = [
     "/", "/services/Web-development", "/services/App-development", "/services/Digital-marketing",
     "/services/Data-science", "/services/Software-development", "/services/Artificial-intelligence",
-    "/services/seo", "/contact-us", "/about-us","/terms&conditions","/privacy&refund"
+    "/services/seo", "/contact-us", "/about-us","/terms&conditions","/privacy&refund", "/certificates"
   ];
 
   const isNotFound = !validRoutes.includes(location.pathname);
@@ -47,6 +50,8 @@ function App() {
         <Route path="/about-us" element={<AboutUsPage />} />
         <Route path="/terms&conditions" element={<Termsconditions />} />
         <Route path="/privacy&refund" element={<Privacyrefund />} />
+        
+        <Route path="/certificates" element={<Certificates />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>

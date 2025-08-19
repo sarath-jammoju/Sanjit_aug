@@ -1,0 +1,64 @@
+.certificate-container {
+  width: 800px;
+  margin: 20px auto;
+  padding: 40px;
+  border: 8px solid #0a2a66;
+  border-radius: 16px;
+  background: #fff;
+  font-family: "Georgia", serif;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.certificate-header h1 {
+  font-size: 40px;
+  color: #0a2a66;
+  margin: 0;
+  letter-spacing: 3px;
+}
+
+.certificate-header h3 {
+  font-size: 20px;
+  margin: 5px 0 30px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  color: #444;
+}
+
+.certificate-name {
+  font-size: 28px;
+  font-family: "Brush Script MT", cursive;
+  margin: 20px 0 10px;
+  color: #222;
+}
+
+.certificate-text {
+  font-size: 18px;
+  margin: 10px 0 20px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.certificate-id {
+  font-size: 18px;
+  color: #0a2a66;
+  margin-bottom: 30px;
+}
+
+.certificate-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.issue-label {
+  font-size: 14px;
+  color: #0a2a66;
+  font-weight: bold;
+}
+
+.signature {
+  font-family: "Brush Script MT", cursive;
+  font-size: 22px;
+  margin-top: 5px;
+}
