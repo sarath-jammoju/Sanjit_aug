@@ -37,5 +37,5 @@ jobs:
           protocol: ftps
           port: 21
           local-dir: dist/                # what to upload
-          server-dir: public_html/        # where to upload on Hostinger
+          server-dir: /public_html        # where to upload on Hostinger
           dangerous-clean-slate: true     # replaces old files to avoid stale assets
