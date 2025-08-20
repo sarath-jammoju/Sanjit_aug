@@ -1,4 +1,4 @@
-# Enable rewriting
+<!-- # Enable rewriting
 RewriteEngine On
 RewriteBase /
 
@@ -12,4 +12,4 @@ RewriteRule . /index.html [L]
 
 # MIME types for JavaScript and WebAssembly modules
 AddType application/javascript js mjs
-AddType application/wasm wasm
+AddType application/wasm wasm -->

@@ -1,41 +1,41 @@
-name: Deploy to Hostinger
+# name: Deploy to Hostinger
 
-on:
-  push:
-    branches:
-      - main   # change if your default branch is different
+# on:
+#   push:
+#     branches:
+#       - main   # change if your default branch is different
 
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
+# jobs:
+#   build-and-deploy:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'   # or the version your app needs
+#       - name: Set up Node.js
+#         uses: actions/setup-node@v4
+#         with:
+#           node-version: '18'   # or the version your app needs
 
-      - name: Install dependencies
-        run: npm install
+#       - name: Install dependencies
+#         run: npm install
 
-      - name: Build project
-        run: npm run build
+#       - name: Build project
+#         run: npm run build
 
-      # Optional: keep builds smaller/faster by cleaning node_modules from dist (not required)
-      # - name: List build output
-      #   run: ls -la dist
+#       # Optional: keep builds smaller/faster by cleaning node_modules from dist (not required)
+#       # - name: List build output
+#       #   run: ls -la dist
 
-      - name: Deploy to Hostinger via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps
-          port: 21
-          local-dir: dist/                # what to upload
-          server-dir: public_html/        # where to upload on Hostinger
-          dangerous-clean-slate: true     # replaces old files to avoid stale assets
+#       - name: Deploy to Hostinger via FTP
+#         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+#         with:
+#           server: ${{ secrets.FTP_SERVER }}
+#           username: ${{ secrets.FTP_USERNAME }}
+#           password: ${{ secrets.FTP_PASSWORD }}
+#           protocol: ftps
+#           port: 21
+#           local-dir: dist/                # what to upload
+#           server-dir: public_html/        # where to upload on Hostinger
+#           dangerous-clean-slate: true     # replaces old files to avoid stale assets
