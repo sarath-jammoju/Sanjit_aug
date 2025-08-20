@@ -1,15 +1,26 @@
-<!-- # Enable rewriting
+# Enable rewriting
 RewriteEngine On
 RewriteBase /
 
 # Serve index.html file directly
 RewriteRule ^index\.html$ - [L]
 
-# Redirect requests for non-existent files/directories to index.html (SPA support)
+# Redirect all other requests to index.html (SPA support)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.html [L]
 
-# MIME types for JavaScript and WebAssembly modules
-AddType application/javascript js mjs
-AddType application/wasm wasm -->
+# Correct MIME types for JavaScript and WebAssembly
+AddType application/javascript .js .mjs
+AddType application/wasm .wasm
+
+# Optional: Set proper cache headers
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+</IfModule>
