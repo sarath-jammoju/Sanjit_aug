@@ -1,6 +1,15 @@
+# Enable rewriting
 RewriteEngine On
 RewriteBase /
+
+# Serve index.html file directly
 RewriteRule ^index\.html$ - [L]
+
+# Redirect requests for non-existent files/directories to index.html (SPA support)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.html [L]
+
+# MIME types for JavaScript and WebAssembly modules
+AddType application/javascript js mjs
+AddType application/wasm wasm
