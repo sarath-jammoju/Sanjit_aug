@@ -31,4 +31,5 @@ jobs:
           username: ${{ secrets.u347088786 }}
           password: ${{ secrets.Sanjit@1212024 }}
           local-dir: dist
-          server-dir: /public_html   # change if your site is in a subfolder
+          # server-dir: /public_html   # change if your site is in a subfolder
+          server-dir: /dist   # change if your site is in a subfolder
